@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='./css/index.css'>
+    <title></title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+    </style>
+</head>
+<body class="scroll-smooth">
+    
+    <div class="max-h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
+        <h1 id="light" class="relative snap-start">
+            <div class="flex flex-col items-center justify-center w-full min-h-screen gap-2 mx-auto dark:bg-slate-800">
+                <div class="w-full max-w-4xl bg-white border erpCalendar drop-shadow-lg dark:border-slate-700"></div>
+                <div class="mt-5">
+                    <a href="#dark" class="px-3 py-1.5 mt-5 text-sm text-white rounded-full drop-shadow-xl font-poppins bg-sky-500"> 🌑 Try Dark?</a>
+                    <a href="#doc" class="px-3 py-1 text-sm rounded-full text-sky-500 drop-shadow-xl ring-1 ring-sky-500 font-poppins">Documents →</a>
+                </div>
+            </div>
+        </h1>
+    
+        <h1 id="dark" class="dark snap-start">
+            <div class="flex flex-col items-center justify-center w-full min-h-screen gap-2 mx-auto dark:bg-slate-800">
+                <div class="w-full max-w-4xl bg-white border erpCalendar drop-shadow-lg dark:border-slate-700"></div>
+                
+                <div class="mt-5">
+                    <a href="#light" class="px-3 py-1.5 mt-5 text-sm text-white rounded-full drop-shadow-xl font-poppins bg-sky-500"> 🌞 Try Light?</a>
+                    <a href="#doc" class="px-3 py-1 text-sm text-white rounded-full drop-shadow-xl ring-1 ring-sky-500 font-poppins">Documents →</a>
+                </div>
+            </div>
+        </h1>
+    
+        <h1 id="doc" class="snap-start">
+            <div class="relative flex flex-col items-center justify-center w-full h-screen gap-5 mx-auto border">
+                <h1 class="p-4 text-xl font-bold border rounded-md">Installation ♻️🚀</h1>
+                <code class="p-4 border rounded-md"> npm i -D @smarterp/calendar </code>
+                <h1 class="p-4 my-5 text-xl font-bold border rounded-md"><a href="https://github.com/turbotechlabs/calendar">Usages 🛫</a></h1>
+
+                <div class="mt-5">
+                    <a href="#light" class="px-3 py-1.5 mt-5 text-sm text-white rounded-full drop-shadow-xl font-poppins bg-sky-500">Try Light 🌞?</a>
+                    <a href="#dark" class="px-3 py-1.5 mt-5 text-sm text-white rounded-full drop-shadow-xl font-poppins bg-sky-500">Try Dark 🌑?</a>
+                </div>
+            </div>
+        </h1>
+    </div>
+    
+    <script>var exports = {};</script>
+    <script src="components/index.js" type="module"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=> {
+
+            const newCalendar = document.querySelectorAll('.erpCalendar')
+            smartCalendar(
+                newCalendar,
+                {
+                    language: 'en', // km
+                    sidebarDisplayDefault: false,
+                    calendarEvents: [
+                        {
+                            id: '1',
+                            name: "King Father's Commemoration Day",
+                            date: "October/15/2023",
+                            description: "ទិវា ប្រារព្ធ ពិធី គោរព ព្រះវិញ្ញាណក្ខន្ធ ព្រះករុណា ព្រះបាទ សម្តេច ព្រះ នរោត្តម សីហនុ ព្រះមហាវីរក្សត្រ ព្រះ វររាជ បិតា ឯករាជ្យ បូរណភាព ទឹកដី និង ឯកភាព ជាតិ ខ្មែរ (King Father's Commemoration Day)",
+                            type: "event",
+                            everyYear: true,
+                            color: "red"
+                        },
+                        {
+                            id: '2',
+                            name: "Pchum Ben Festival",
+                            date: ["October/13/2023", "October/15/2023"],
+                            description: "ពិធី បុណ្យ ភ្ជុំ បិណ្ឌ (Pchum Ben Festival)",
+                            badge: "3Days",
+                            type: "event",
+                            everyYear: true,
+                            color: "red" 
+                        },
+                        {
+                            id: '3',
+                            name: "ថ្ងៃដាក់បិណ្ឌ",
+                            date: ["september/30/2023", "October/12/2023"],
+                            description: "ថ្ងៃដាក់បិណ្ឌ",
+                            type: "event",
+                            everyYear: true,
+                            color: "green"
+                        },
+                    ]
+                }
+            );
+        })
+    </script>
+
+
+</body>
+</html>
