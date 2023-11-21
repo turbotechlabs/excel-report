@@ -1,4 +1,4 @@
-# SmartERP Calendar
+# SmartERP Excel
 <p align="center">
     <img src="https://img.shields.io/npm/dt/@smarterp/excel">
 </p>
