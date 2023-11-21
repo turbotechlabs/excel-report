@@ -1,8 +1,9 @@
 {
-    "name": "@smarterp/calendar",
+    "name": "@smarterp/excel",
     "version": "0.1.1",
     "description": "",
-    "main": "./dist/components/calendar.js",
+    "main": "./dist/components/SmartExportExcel.js",
+    "types": "component",
     "scripts": {
         "serve": "npm run copy:file && live-server ./dist",
         "style": "npm run style:watch",
@@ -42,10 +43,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/turbotechlabs/calendar.git"
+        "url": "git+https://github.com/turbotechlabs/excel-report.git"
     },
     "bugs": {
-        "url": "https://github.com/turbotechlabs/calendar"
+        "url": "https://github.com/turbotechlabs/excel-report"
     },
     "homepage": "https://codepen.io/leatsophat/full/RwEQxWb"
 }
