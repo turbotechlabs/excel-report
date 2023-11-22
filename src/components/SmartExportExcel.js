@@ -35,7 +35,7 @@ const _Default = {
         src: `${window.location.origin}/images/logo/turbotech_logo.png`,
         width: "133",
         height: "",
-        alt: "TURBOTECH",
+        alt: "Turbotech",
     },
     border: "",
     borderStyle: "solid",
@@ -114,7 +114,7 @@ export class SmartExportExcel {
         const imageSrc    = typeof _.image.src !== "undefined" ? _.image.src : `${window.location.origin}/images/logo/turbotech_logo.png`;
         const imageHeight = typeof _.image.height !== "undefined" ? _.image.height : "";
         const imageWidth  = typeof _.image.width !== "undefined" ? _.image.width : "133";
-        const imageAlt    = typeof _.image.alt !== "undefined" ? _.image.alt : "TURBOTECH";
+        const imageAlt    = typeof _.image.alt !== "undefined" ? _.image.alt : "Turbotech";
         
         let header = "";
         if(_.setHeaderHTML == "") {
