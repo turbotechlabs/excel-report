@@ -7,7 +7,7 @@
 
 Import on `resource/js/app.js`
 ```js
-import SmartExportExcel from "@smarterp/excel"
+import { SmartExportExcel } from "@smarterp/excel"
 
 export default {
     ...
